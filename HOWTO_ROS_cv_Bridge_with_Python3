@@ -1,0 +1,41 @@
+Dependencies
+We’ll first download the python build tools:
+
+$ sudo apt-get install python3-pip python-catkin-tools python3-dev python3-numpy
+$ sudo pip3 install rospkg catkin_pkg
+
+Workspace
+Next, create a separate workspace to compile the bridge_cv ROS package. We would be naming the directory cvbridge_build_ws.
+
+$ mkdir -p ~/cvbridge_build_ws/src
+$ cd ~/cvbridge_build_ws/src
+After the workspace has been setup, we’ll clone the open_vision repository into ~/cvbridge_build_ws/src:
+
+$ git clone -b noetic https://github.com/ros-perception/vision_opencv.git
+
+
+Open CMakeLists.txt with you favorite text editor and make the following modification at Line 11, changing:
+
+find_package(Boost REQUIRED python37)
+to
+
+find_package(Boost REQUIRED python3)
+
+Compilation
+$ cd ~/cvbridge_build_ws
+$ catkin config -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib/aarch64-linux-gnu/libpython3.6m.so
+$ catkin config --install
+$ catkin build cv_bridge
+
+if error occurs here,
+don't catkin config and try:
+
+$ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+
+
+Source your .sh files
+$ source devel/setup.bash
+
+
+To make sure your workspace is properly overlayed by the setup script, make sure ROS_PACKAGE_PATH environment variable includes the directory you're in.
+$ echo $ROS_PACKAGE_PATH
