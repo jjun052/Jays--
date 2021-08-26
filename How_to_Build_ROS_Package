@@ -1,0 +1,9 @@
+1. Create Catkin Workspace:  $mkdir -p ~/catkin_ws/src
+
+2. $catkin init
+3. $catkin build
+4. $nano ~/.bashrc and type the following lines at the end of the file.
+ source /opt/ros/melodic/setup.bash
+ source ~/catkin_ws/devel/setup.bash
+ 
+ 5. $source ~/.bashrc
