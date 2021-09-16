@@ -6,3 +6,6 @@ https://injae-kim.github.io/robot_operating_system/2019/07/08/ros-realtime-video
 
 https://forums.developer.nvidia.com/t/how-to-convert-ssd-mobilenet-v2-to-uff-then-use-uff-in-jetson-inference-detectnet-camera-script/84291/9 -- How to convert SSD mobilenet v2 to uff,Then use uff in jetson_inference detectnet_camera script？
 https://www.koreascience.or.kr/article/JAKO202031458604137.pdf -- TensorRT와 SSD를 이용한 실시간 얼굴 검출방법
+
+
+Google Search [ssd_mobilenet_v2_coco.onnx uff Related] - https://www.google.com/search?q=ssd_mobilenet_v2_coco.onnx+uff&client=ubuntu&ei=mQ9DYcf9JprV-Qb_2JNw&oq=ssd_mobilenet_v2_coco.onnx+uff&gs_lcp=Cgdnd3Mtd2l6EANKBAhBGAFQhfQEWKX9BGCd_gRoAXAAeACAAdABiAGIBJIBBTAuMi4xmAEAoAEBwAEB&sclient=gws-wiz&ved=0ahUKEwiHrqimmIPzAhWaat4KHX_sBA4Q4dUDCA4&uact=5
